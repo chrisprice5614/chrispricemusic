@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Chris Price Music</title>
+        <meta name = "keywords" content ="chris price music, chris price composition, arranger, composer, arrangement">
+        <meta name = "viewport" content = "width=device-width">
+        <meta name = "description" content = "Custom compositions and arrangements for any type of ensemble by Chris Price">
+        <meta name = "author" content = "Chris Price">
+        <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+        <link rel="stylesheet" href="/themes/main.css" type="text/css">
+    </head>
+    <body>
+        <header>
+        </header>
+        <script id="nav_replace" src="nav.js"></script>
+        <h1 class="title cssanimation sequence fadeInBottom">Blog</h1>
+        <br>
+        <br>
+
+        <main>
+            <div class="post_line">
+                <div id = "post_replace">
+                </ul>
+                <script src="posts.js"></script>
+                <script>
+                    var container = document.querySelector("#post_replace");
+                    let index = 0;
+                    for (let item of items) {
+                        index++;
+                    var html = `
+                            <a href="${item.link}" class="thicc-link">
+                                                                    ${item.title}
+                            </a>
+                    <br>
+                    `
+                    if(1 != -1)
+                    {
+                        if(index < 10)
+                        {
+                            container.insertAdjacentHTML('beforeend', html);
+                        }
+                    }
+                }
+                </script>
+            </div>
+        </main>
+        <script id="foot_replace" src="footer.js"></script>
+    </body>
+</html>
